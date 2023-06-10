@@ -23,6 +23,13 @@
         margin-top: 300px;
         grid-template-columns: repeat(1, 1fr) !important;
     }
+
+    #logo {
+        height: 200px !important;
+        width: 200px !important;
+        top: 10% !important;
+        left: 20% !important;
+    }
 }
 
 @media only screen and (min-width:481px) {
@@ -50,6 +57,15 @@
         margin-top: 250px;
         grid-template-columns: repeat(1, 1fr) !important;
     }
+
+    #logo {
+        height: 300px !important;
+        width: 300px !important;
+        top: 10% !important;
+        left: 20% !important;
+    }
+
+
 }
 
 @media only screen and (min-width:641px) {
@@ -81,6 +97,13 @@
         margin-top: 220px;
         grid-template-columns: repeat(1, 1fr) !important;
     }
+
+    #logo {
+        height: 300px !important;
+        width: 300px !important;
+        top: 10% !important;
+        left: 25% !important;
+    }
 }
 
 @media only screen and (min-width:961px) {
@@ -111,6 +134,13 @@
     .grid-whyus {
         margin-top: 50px;
         grid-template-columns: repeat(1, 1fr) !important;
+    }
+
+    #logo {
+        height: 300px !important;
+        width: 300px !important;
+        top: 10% !important;
+        left: 30% !important;
     }
 
 }
@@ -174,6 +204,13 @@
 
     .whyus-text {
         margin-top: 10% !important;
+    }
+
+    #logo {
+        height: 300px !important;
+        width: 300px !important;
+        top: 10% !important;
+        left: 40% !important;
     }
 }
 
@@ -432,3 +469,70 @@ button.services {
 }
 
 /* Reviews Section */
+* {
+    box-sizing: border-box
+}
+
+body {
+    font-family: Verdana, sans-serif;
+    margin: 0
+}
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    background: white;
+}
+
+/* Slides */
+.mySlides {
+    display: none;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+/* Add a blue color to the author */
+.author {
+    color: rgba(87, 135, 224, 0.699);
+}
+
+
+#logo {
+    position: absolute;
+    top: 0%;
+    bottom: 30%;
+    right: 0%;
+    left: 40%;
+    height: 400px;
+    width: 400px;
+}
