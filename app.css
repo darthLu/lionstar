@@ -1,0 +1,288 @@
+@media only screen and (min-width: 360px) {
+
+    /* For mobile phones */
+    .header {
+        font-size: 6vw;
+    }
+
+    .signUp,
+    .grid-intro {
+        font-size: 5.4vw;
+    }
+
+    .modal-content {
+        width: 100% !important;
+    }
+
+    .grid {
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+
+}
+
+@media only screen and (min-width: 600px) {
+
+    /* For tablets: */
+    .header {
+        font-size: 5vw;
+    }
+
+    .signUp,
+    .grid-intro {
+        font-size: 4vw;
+    }
+
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .modal-content {
+        width: 100% !important;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+
+    /* For Desktops */
+    .header {
+        font-size: 2vw;
+    }
+
+    .signUp,
+    .grid-intro {
+        font-size: 2vw;
+    }
+
+    .modal-content {
+        width: 50% !important;
+    }
+
+    .grid {
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(24, 65, 24);
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #0a491d;
+}
+
+.active {
+    background-color: #108148;
+}
+
+/* Header Image + text */
+
+img {
+    display: block;
+    object-fit: cover;
+    height: 400px;
+    width: 100%;
+    filter: brightness(.5);
+}
+
+.header {
+    position: relative;
+    text-align: center;
+    color: rgb(248, 248, 248);
+    font-weight: 400;
+    margin-bottom: 0px;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    right: 10%;
+    left: 10%;
+}
+
+.container {
+    text-align: center;
+    margin: -21px 0px 0;
+    top: 50%;
+    bottom: 50%;
+    height: 200px;
+    width: 100%;
+    background-color: #97bea1;
+}
+
+.signUp {
+    padding-top: 50px;
+    font-weight: bold;
+}
+
+
+/* Sign Up Form Popup */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 8;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    margin: 50px auto;
+    width: 60%;
+}
+
+h2,
+p {
+    margin: 0 0 20px;
+    font-weight: 400;
+    color: #0a0a0a;
+}
+
+span {
+    color: #000000;
+    display: block;
+    padding: 0 0 5px;
+}
+
+form {
+    padding: 25px;
+    margin: 25px;
+    box-shadow: 0 2px 5px #074411;
+    background: #eee;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #1c87c9;
+    outline: none;
+}
+
+textarea {
+    padding: 10px;
+    width: 91%;
+    height: 100px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #1c87c9;
+    outline: none;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #1c87c9;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+}
+
+button:hover {
+    background: #2371a0;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button.button {
+    background: none;
+    border-top: none;
+    outline: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: #02274a 1px solid;
+    padding: 0 0 3px 0;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button.button:hover {
+    border-bottom: #a99567 1px solid;
+    color: #a99567;
+}
+
+/* What can we do for you? */
+
+.container2 {
+    text-align: center;
+    margin: -21px 0px 0;
+    top: 50%;
+    bottom: 50%;
+    height: 400px;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.grid-intro {
+    padding: 2%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 32%;
+    gap: 10px;
+    background-color: #f2f6f8;
+    padding: 10px;
+}
+
+.grid>div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 20px;
+}
+
+.item1 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+button.services {
+    background: none;
+    border-top: none;
+    outline: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: #02274a 1px solid;
+    padding: 30px 0 3px 0;
+    font-size: 16px;
+    cursor: pointer;
+}
