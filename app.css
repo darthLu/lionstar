@@ -1,4 +1,4 @@
-@media only screen and (min-width: 360px) {
+@media only screen and (min-width: 320px) {
 
     /* For mobile phones */
     .header {
@@ -18,9 +18,14 @@
         grid-template-columns: repeat(1, 1fr) !important;
     }
 
+    .grid-whyus {
+        margin-top: 50%;
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 641px) {
 
     /* For tablets: */
     .header {
@@ -36,12 +41,17 @@
         grid-template-columns: repeat(1, 1fr);
     }
 
+    .grid-whyus {
+        margin-top: 20%;
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
     .modal-content {
         width: 100% !important;
     }
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 1025px) {
 
     /* For Desktops */
     .header {
@@ -60,7 +70,15 @@
     .grid {
         grid-template-columns: repeat(3, 1fr) !important;
     }
+
+    .grid-whyus {
+        margin-top: 10px;
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
 }
+
+
+/* Start of Page */
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -72,7 +90,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgb(24, 65, 24);
+    background-color: rgba(24, 65, 24, 0.945);
 }
 
 li {
@@ -85,6 +103,7 @@ li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-size: 14px;
 }
 
 li a:hover:not(.active) {
@@ -97,7 +116,7 @@ li a:hover:not(.active) {
 
 /* Header Image + text */
 
-img {
+#top-image {
     display: block;
     object-fit: cover;
     height: 400px;
@@ -128,7 +147,7 @@ img {
     bottom: 50%;
     height: 200px;
     width: 100%;
-    background-color: #97bea1;
+    background-color: #1a8f297e;
 }
 
 .signUp {
@@ -259,7 +278,6 @@ button.button:hover {
     display: grid;
     grid-template-columns: 33.3% 33.3% 32%;
     gap: 10px;
-    background-color: #f2f6f8;
     padding: 10px;
 }
 
@@ -268,11 +286,6 @@ button.button:hover {
     text-align: center;
     padding: 20px 0;
     font-size: 20px;
-}
-
-.item1 {
-    grid-row-start: 1;
-    grid-row-end: 3;
 }
 
 button.services {
@@ -286,3 +299,38 @@ button.services {
     font-size: 16px;
     cursor: pointer;
 }
+
+/* Why us Section */
+
+.container3 {
+    background-color: #1a8f297e;
+    height: 575px;
+    width: auto;
+    margin-top: 30px;
+}
+
+#image-us {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+
+}
+
+.grid-whyus {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 10px;
+    padding: 50px;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.whyus-text {
+    margin-top: 10%;
+    text-align: left;
+    padding: 30px;
+    font-size: 20px;
+
+}
+
+/* Reviews Section */
