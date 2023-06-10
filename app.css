@@ -7,7 +7,8 @@
 
     .signUp,
     .grid-intro,
-    .whyus-text {
+    .whyus-text,
+    .text-services {
         font-size: 5.4vw;
     }
 
@@ -30,6 +31,13 @@
         top: 10% !important;
         left: 20% !important;
     }
+
+    .grid-services {
+        grid-template-columns: repeat(1, 1fr) !important;
+
+    }
+
+
 }
 
 @media only screen and (min-width:481px) {
@@ -535,4 +543,62 @@ body {
     left: 50%;
     height: 400px;
     width: 400px;
+}
+
+
+/* --------------------------------------------------------------------------- */
+/* Start of Services Page */
+
+.services-container {
+    background-color: #1a8f297e;
+    width: auto;
+    margin-top: 30px;
+}
+
+#image-truck {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+
+}
+
+.grid-services {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 10px;
+    padding: 50px;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.text-services {
+    margin-top: 10%;
+    text-align: left;
+    padding: 30px;
+    font-size: 20px;
+
+}
+
+.grid-service-text {
+    text-align: left;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 10px;
+    padding-bottom: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+}
+
+.text-basic-title,
+.text-extra-title {
+    margin-left: 240px;
+}
+
+.text-basic-body,
+.text-extra-body {
+    padding-left: 50px;
 }
