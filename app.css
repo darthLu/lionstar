@@ -33,11 +33,15 @@
     }
 
     #logo {
-        height: 200px !important;
-        width: 200px !important;
-        top: 10% !important;
-        left: 20% !important;
+        height: 200px;
+        width: 200px;
     }
+
+    .footer-services {
+        margin-top: 450px;
+    }
+
+
 }
 
 @media only screen and (min-width:481px) {
@@ -77,6 +81,10 @@
     .grid-our-services {
         margin-top: -30px;
         grid-template-columns: repeat(1, 1fr) !important;
+    }
+
+    .footer-services {
+        margin-top: 350px;
     }
 
 
@@ -170,6 +178,10 @@
         padding-top: 10%;
         margin-top: -30px;
         grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    .footer-services {
+        margin-top: 0px;
     }
 
 
@@ -661,5 +673,15 @@ body {
     padding-right: 100px;
     grid-row-start: 1;
     grid-row-end: 2;
+
+}
+
+.footer-services {
+    display: grid;
+    place-items: center;
+    height: 450px;
+    width: 100;
+    background-image: url("assets/tall.jpg");
+    background-position: center;
 
 }
