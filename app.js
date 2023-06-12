@@ -63,7 +63,3 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = "block";
 }
 
-//button onClick to Services Page
-function toServices() {
-    
-}
