@@ -663,13 +663,3 @@ body {
     grid-row-end: 2;
 
 }
-
-.text-basic-title,
-.text-extra-title {
-    margin-left: 240px;
-}
-
-.text-basic-body,
-.text-extra-body {
-    padding-left: 50px;
-}
