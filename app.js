@@ -40,7 +40,7 @@ window.addEventListener("load", function () {
 });
 
 
-// button onClick to services
+// review slideshow click through
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -61,4 +61,9 @@ function showSlides(n) {
         slides[i].style.display = "none";
     }
     slides[slideIndex - 1].style.display = "block";
+}
+
+//button onClick to Services Page
+function toServices() {
+    
 }
