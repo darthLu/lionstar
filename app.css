@@ -1,6 +1,8 @@
 @media only screen and (min-width:320px) and (max-width:480px) {
 
     /* smartphones, iPhone, portrait 480x320 phones */
+
+    /* Main page */
     .header {
         font-size: 6vw;
     }
@@ -26,7 +28,7 @@
         grid-template-columns: repeat(1, 1fr) !important;
     }
 
-
+    /* Services Page */
     .grid-our-services {
         margin-top: -30px;
         grid-template-columns: repeat(1, 1fr) !important;
@@ -37,16 +39,32 @@
         width: 200px;
     }
 
-    .footer-services {
-        margin-top: 450px;
+    .services-container {
+        height: -50px;
     }
 
+    .grid-services {
+        grid-template-columns: repeat(1, 1fr) !important;
+
+    }
+
+    .footer-services {
+        margin-top: 35%;
+    }
+
+    /* Portfolio */
+    .container-lawns {
+        margin-left: 0% !important;
+        width: 100% !important;
+    }
 
 }
 
-@media only screen and (min-width:481px) {
+@media only screen and (min-width:481px) and (max-width:640px) {
 
     /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+
+    /* Main page */
     .header {
         font-size: 6vw;
     }
@@ -78,22 +96,35 @@
         left: 20% !important;
     }
 
+
+    /* Services Page */
     .grid-our-services {
         margin-top: -30px;
         grid-template-columns: repeat(1, 1fr) !important;
     }
 
-    .footer-services {
-        margin-top: 350px;
+    .grid-services {
+        grid-template-columns: repeat(1, 1fr) !important;
+
     }
 
+    .footer-services {
+        margin-top: 25%;
+    }
 
+    /* Portfolio */
+    .container-lawns {
+        margin-left: 0% !important;
+        width: 100% !important;
+    }
 
 }
 
-@media only screen and (min-width:641px) {
+@media only screen and (min-width:641px) and (max-width:960px) {
 
     /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+
+    /* Main page */
     .header {
         font-size: 6vw;
     }
@@ -133,11 +164,30 @@
         top: 10% !important;
         left: 25% !important;
     }
+
+
+    /* Services Page */
+    .grid-services {
+        grid-template-columns: repeat(1, 1fr) !important;
+
+    }
+
+    .footer-services {
+        margin-top: 20%;
+    }
+
+    /* Portfolio */
+    .container-lawns {
+        margin-left: 0% !important;
+        width: 100% !important;
+    }
 }
 
-@media only screen and (min-width:961px) {
+@media only screen and (min-width:961px) and (max-width:1024px) {
 
     /* tablet, landscape iPad, lo-res laptops ands desktops */
+
+    /* Main Page */
     .header {
         font-size: 6vw;
     }
@@ -174,22 +224,27 @@
         left: 30% !important;
     }
 
+
+    /* Services Page */
     .grid-our-services {
         padding-top: 10%;
         margin-top: -30px;
         grid-template-columns: repeat(2, 1fr) !important;
     }
 
-    .footer-services {
-        margin-top: 0px;
+    /* Portfolio Page */
+    .container-lawns {
+        margin-left: 0% !important;
+        width: 100% !important;
     }
-
 
 }
 
-@media only screen and (min-width:1025px) {
+@media only screen and (min-width:1025px) and (max-width:1280px) {
 
     /* big landscape tablets, laptops, and desktops */
+
+    /* Main Page */
     .header {
         font-size: 5vw;
     }
@@ -216,6 +271,17 @@
     .modal-content {
         width: 100% !important;
     }
+
+    .container-our-services {
+        margin-top: 0% !important;
+    }
+
+    /* Portfolio Page */
+    .container-lawns {
+        margin-left: 0% !important;
+        width: 100% !important;
+    }
+
 }
 
 @media only screen and (min-width:1281px) {
@@ -258,6 +324,11 @@
     .text-our-services {
         margin-top: 20%;
     }
+
+    .container-our-services {
+        margin-top: 0% !important;
+    }
+
 }
 
 
@@ -285,7 +356,7 @@ li a {
     display: block;
     color: rgb(255, 255, 255);
     text-align: center;
-    padding: 14px 16px;
+    padding: 12px 14px;
     text-decoration: none;
     font-size: 14px;
 }
@@ -632,10 +703,20 @@ body {
 /* --------------------------------------------------------------------------- */
 /* Start of Services Page */
 
-.services-container {
+.container-our-services {
     background-color: #1a8f297e;
     width: auto;
     margin-top: 30px;
+}
+
+.services-container {
+    text-align: center;
+    margin: -21px 0px 0;
+    top: 50%;
+    bottom: 50%;
+    height: 300px;
+    width: 100%;
+    background-color: #ffffff;
 }
 
 #image-truck {
@@ -647,11 +728,12 @@ body {
 
 .grid-services {
     display: grid;
-    grid-template-columns: 50% 50%;
-    gap: 10px;
-    padding: 50px;
+    grid-template-columns: 49% 49%;
+    padding-top: 3%;
+    gap: 30px;
     grid-row-start: 1;
     grid-row-end: 2;
+
 }
 
 .text-services {
@@ -662,19 +744,7 @@ body {
 
 }
 
-.grid-service-text {
-    text-align: left;
-    background-color: white;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    padding: 10px;
-    padding-bottom: 50px;
-    padding-left: 100px;
-    padding-right: 100px;
-    grid-row-start: 1;
-    grid-row-end: 2;
 
-}
 
 .footer-services {
     display: grid;
@@ -690,14 +760,14 @@ body {
 /* -------------- Portfolio Page --------------------- */
 
 .portfolio {
-    background-color: #1a8f297e;
+    background-color: #6c9c737e;
 }
 
 /* Position the image container (needed to position the left and right arrows) */
 .container-lawns {
+    margin-left: 10%;
     position: relative;
-    height: 100%;
-    width: 100%;
+    width: 80%;
 }
 
 /* Hide the images by default */

@@ -34,7 +34,7 @@ window.addEventListener("load", function () {
         })
             .then(() => {
                 alert("Thanks! We'll get back to you soon.");
-                window.location.replace("https://darthlu.github.io/lionstar");
+                window.location.replace("index.html");
             })
     });
 });
