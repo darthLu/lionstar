@@ -129,7 +129,7 @@
         font-size: 6vw;
     }
 
-    .container {
+    .container-signup {
         margin-bottom: 40px !important;
     }
 
@@ -192,7 +192,7 @@
         font-size: 6vw;
     }
 
-    .container {
+    .container-signup {
         margin-bottom: 40px !important;
     }
 
@@ -284,11 +284,66 @@
 
 }
 
-@media only screen and (min-width:1281px) {
+@media only screen and (min-width:1281px) and (max-width: 1920px) {
 
     /* hi-res laptops and desktops */
     .header {
         font-size: 2vw;
+    }
+
+    .signUp,
+    .grid-intro,
+    .whyus-text {
+        font-size: 2.5vw;
+    }
+
+    .container-signup {
+        margin-bottom: 30px !important;
+    }
+
+    .modal-content {
+        width: 50% !important;
+    }
+
+    .grid-maintenance {
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+
+    .grid-whyus {
+        margin-top: 10px;
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    .whyus-text {
+        margin-top: 10% !important;
+    }
+
+    #logo {
+        height: 300px !important;
+        width: 300px !important;
+        top: 10% !important;
+        left: 40% !important;
+    }
+
+    .text-our-services {
+        margin-top: 20%;
+    }
+
+    .container-our-services {
+        margin-top: 0% !important;
+    }
+
+}
+
+@media only screen and (min-width:1921px) and (max-width: 3840px) {
+
+    /* higher-res laptops and desktops */
+    .header {
+        font-size: 2vw;
+    }
+
+    .container-signup {
+        margin-bottom: 20px !important;
     }
 
     .signUp,
@@ -350,19 +405,21 @@ ul {
 
 li {
     float: left;
+    box-sizing: content-box;
 }
 
 li a {
     display: block;
     color: rgb(255, 255, 255);
     text-align: center;
-    padding: 12px 14px;
+    padding: 14px 16px;
     text-decoration: none;
     font-size: 14px;
 }
 
 li a:hover:not(.active) {
-    background-color: #0a491d;
+    background-color: #0d3519;
+
 }
 
 .active {
@@ -395,6 +452,16 @@ li a:hover:not(.active) {
     left: 10%;
 }
 
+.container-signup {
+    text-align: center;
+    margin: -21px 0px 0;
+    top: 50%;
+    bottom: 50%;
+    height: 200px;
+    width: 100%;
+    background-color: #1a8f297e;
+}
+
 .container {
     text-align: center;
     margin: -21px 0px 0;
@@ -408,6 +475,25 @@ li a:hover:not(.active) {
 .signUp {
     padding-top: 50px;
     font-weight: bold;
+}
+
+.button-signup {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    background-color: #1e7030;
+    height: 40px;
+    width: 40%;
+    border: none;
+    border-radius:10px;
+    color: white;
+    box-shadow: 1px 1px 0px 1px #000000;
+}
+
+.button-signup:hover {
+    background-color: #042213;
+    cursor: pointer;
 }
 
 
@@ -589,7 +675,7 @@ button.services {
 
 /* Reviews Section */
 * {
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
 body {
@@ -600,7 +686,7 @@ body {
 /* Slideshow container */
 .slideshow-container {
     position: relative;
-    background: white;
+    background: rgb(255, 255, 255);
 }
 
 /* Slides */
@@ -611,15 +697,15 @@ body {
 }
 
 /* Next & previous buttons */
-.prev,
-.next {
+a.prev,
+a.next {
     cursor: pointer;
     position: absolute;
     top: 50%;
     width: auto;
     margin-top: -30px;
     padding: 16px;
-    color: #888;
+    color: #000000;
     font-weight: bold;
     font-size: 20px;
     border-radius: 0 3px 3px 0;
@@ -627,22 +713,22 @@ body {
 }
 
 /* Position the "next button" to the right */
-.next {
+a.next {
     position: absolute;
     right: 0;
     border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
+a.prev:hover,
+a.next:hover {
+    background-color: rgba(0, 0, 0, 0.24);
+    color: rgb(255, 255, 255);
 }
 
 /* Add a blue color to the author */
 .author {
-    color: rgba(87, 135, 224, 0.699);
+    color: rgba(53, 87, 151, 0.699);
 }
 
 .footer {
