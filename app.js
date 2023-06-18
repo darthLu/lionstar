@@ -19,11 +19,26 @@ window.onclick = function (event) {
     }
 };
 
-/*
-function buttonThanks() {
-    alert("Thanks! Someone will get back to you soon!");
-    setTimeout(window.location.replace("https://lionstarlawncare.github.io"), 300);
-} */
+
+
+// Contact Form - Successful submit alert and back to homepage
+window.addEventListener("load", function () {
+    const form = document.getElementById('signup');
+    form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        const data = new FormData(form);
+        const action = e.target.action;
+        fetch(action, {
+            method: 'POST',
+            body: data,
+        })
+            .then(() => {
+                alert("Thanks! We'll get back to you soon.");
+                window.location.replace("https://lionstarlawncare.github.io/");
+            })
+    });
+});
+
 
 // review slideshow click through
 var slideIndex = 1;
