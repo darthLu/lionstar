@@ -376,6 +376,17 @@
         left: 40% !important;
     }
 
+    /* Services Page */
+
+    .container-our-services {
+        height: 775px;
+    }
+
+    #image-truck {
+        height: 75% !important;
+        width: auto;
+    }
+
     .text-our-services {
         margin-top: 20%;
     }
@@ -486,7 +497,7 @@ li a:hover:not(.active) {
     height: 40px;
     width: 40%;
     border: none;
-    border-radius:10px;
+    border-radius: 10px;
     color: white;
     box-shadow: 1px 1px 0px 1px #000000;
 }
@@ -810,7 +821,7 @@ a.next:hover {
     object-fit: cover;
     width: 100%;
     height: auto;
-
+    border-radius: 50px;
 }
 
 .grid-services {
