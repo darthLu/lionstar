@@ -1,5 +1,5 @@
 // Contact Form Popup
-let modalBtns = [...document.querySelectorAll(".button")];
+let modalBtns = [...document.querySelectorAll(".button-signup")];
 modalBtns.forEach(function (btn) {
     btn.onclick = function () {
         let modal = btn.getAttribute("data-modal");
@@ -34,7 +34,7 @@ window.addEventListener("load", function () {
         })
             .then(() => {
                 alert("Thanks! We'll get back to you soon.");
-                window.location.replace("index.html");
+                window.location.replace("https://lionstarlawncare.github.io/");
             })
     });
 });
