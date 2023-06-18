@@ -847,7 +847,7 @@ a.next:hover {
 .footer-services {
     display: grid;
     place-items: center;
-    height: 450px;
+    height: 350px;
     width: 100;
     background-image: url("assets/tall.jpg");
     background-position: center;
